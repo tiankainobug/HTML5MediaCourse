@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../vue.js"></script>
+</head>
+<body>
+<div id="vueapp">
+    <div>
+        <button @click="btnStart">开始</button>
+        <button @click="btnPause">暂停</button>
+        <button @click="btnConsume">继续</button>
+        <button @click="btnStop">结束</button>
+        <button @click="btnPlay" :disabled="!currentWebmData">播放</button>
+    </div>
+    <div>
+        <audio controls ref="audio"></audio>
+    </div>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
