@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../vue.js"></script>
+</head>
+<body>
+<div id="vueapp">
+    <button @click="btnStart">开始</button>
+    <button @click="btnEnd">结束</button>
+    <button @click="btnPlay">播放</button>
+    <div>
+        <video ref="video" controls width="400" height="300"></video>
+    </div>
+    <div>
+        <video ref="play" controls width="400" height="300"></video>
+    </div>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
